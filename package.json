@@ -1,0 +1,27 @@
+{
+  "name": "xcvr",
+  "version": "1.0.0",
+  "description": "Simple message delivery system",
+  "main": "XCVR.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -r test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayk/XCVR.git"
+  },
+  "keywords": [
+    "messages",
+    "events",
+    "transceiver"
+  ],
+  "author": "Jay Kuri",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/jayk/XCVR/issues"
+  },
+  "homepage": "https://github.com/jayk/XCVR#readme"
+}

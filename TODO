@@ -1,0 +1,8 @@
+# TODO
+
+ * Make XCVR cross-tab aware so that, when enabled, an application can relay
+messages across multiple tabs / windows of the same application.
+
+ * Allow delivery of messages to WebWorkers in the browser.
+
+
