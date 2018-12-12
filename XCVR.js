@@ -42,12 +42,20 @@ function __xcvr() {
         }
     }
 
+    function fault_tolerant_handler_call(func, message, message_type) {
+       try {
+            func(message, message_type);
+       } catch(error) {
+            console.warn("XCVR error when processing '" + message_type + "'", error);
+       }
+    }
+
     function send_message(message_type, message, func, synchronous) {
         if (synchronous) {
-           func(message, message_type);
+            fault_tolerant_handler_call(func, message, message_type);
         } else {
-           setTimeout(function() {
-               func(message, message_type);
+            setTimeout(function() {
+                fault_tolerant_handler_call(func, message, message_type);
            }, 0);
         }
     }
