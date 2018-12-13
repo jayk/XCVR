@@ -1,7 +1,7 @@
 {
   "name": "xcvr",
   "version": "1.0.0",
-  "description": "Simple message delivery system",
+  "description": "Simple messaging system for browser and node.js",
   "main": "XCVR.js",
   "directories": {
     "test": "test"
@@ -19,7 +19,7 @@
     "transceiver"
   ],
   "author": "Jay Kuri",
-  "license": "GPL-3.0-or-later",
+  "license": "LGPL-2.1",
   "bugs": {
     "url": "https://github.com/jayk/XCVR/issues"
   },
